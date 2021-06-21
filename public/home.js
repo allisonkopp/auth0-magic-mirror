@@ -70,7 +70,7 @@ const Home = () => {
     const token = await getAccessTokenSilently();
     const res = await axios({
       method: "post",
-      url: "https://auth0-magic-mirror.herokuapp.com/v1/update-meeting",
+      url: "https://magic-mirror1.herokuapp.com/",
       data: { status: custom || text },
       headers: {
         Authorization: `Bearer ${token}`
@@ -146,8 +146,8 @@ const Home = () => {
 const domContainer = document.querySelector("#root");
 ReactDOM.render(
   <Auth0Provider
-    domain="dev-rm3u1yq4.auth0.com"
-    clientId="Jck1XCeOhHUrTrp0LQp1V5cyz5ECXGJp"
+    domain="dev-iw8185sc.us.auth0.com"
+    clientId="Dqw1Hzxx1jP2hSw7kXK85as1v7fkqngT"
     audience="https://magicmirror/api"
     redirectUri={window.location.origin}
   >
